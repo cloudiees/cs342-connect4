@@ -1,0 +1,388 @@
+.root {
+    -bgColor: #121212;
+    -elevatedColor: #222222;
+    -elevatedColor2: #3F3F3F;
+    -elevatedColor3: #5F5F5F;
+    -primary: #ff9eba;
+    -secondary: #9ebaff;
+    -fontColor: #EEEEEE;
+}
+
+.chat .increment-arrow, .chat .decrement-arrow{
+    -fx-background-color: -fontColor;
+}
+
+.chat .decrement-button, .chat .increment-button{
+    -fx-background-color: transparent;
+    -fx-border-color: -bgColor;
+}
+
+.chat .thumb{
+    -fx-background-color: -elevatedColor;
+    -fx-background-radius: 5;
+}
+
+.chat .scroll-bar:vertical{
+    -fx-background-color: -bgColor;
+}
+
+.chat {
+    -fx-background-color: -bgColor;
+    -fx-text-fill: -fontColor;
+}
+.chat .list-cell{
+    -fx-text-fill: -fontColor;
+}
+
+.chat .list-cell:even{
+    -fx-background-color: -elevatedColor;
+}
+.chat .list-cell:odd{
+    -fx-background-color: -elevatedColor2;
+}
+
+.chat .scroll-bar:horizontal {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.chat .scroll-bar:horizontal .increment-arrow{
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.chat .scroll-bar:horizontal .decrement-arrow{
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.text-field{
+    -fx-text-box-border: transparent;
+    -fx-focus-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fontColor;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.leftTxt{
+    -fx-text-alignment: left;
+    -fx-padding: 0;
+    -fx-alignment: baseline-left;
+}
+
+.textEmph{
+    -fx-font-size: 15;
+}
+
+.inputTxt{
+    -fx-background-color: -elevatedColor2;
+    -fx-text-fill: -fontColor;
+    -fx-prompt-text-fill: -elevatedColor3;
+    -fx-alignment: center-left;
+}
+
+.inputTxt:hover{
+    -fx-background-color: -elevatedColor3;
+}
+
+.button {
+    -fx-background-color: -elevatedColor;
+    -fx-text-fill: -fontColor;
+    -fx-padding: 5;
+    -fx-border-color: -elevatedColor2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-width: 2;
+    -fx-border-insets: 0;
+}
+
+.button:hover {
+    -fx-border-color: -primary;
+    -fx-background-color: -primary;
+}
+
+.c4Button{
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%;
+    -fx-border-width: 2;
+    -fx-border-insets: 0;
+}
+
+.elevatedBox{
+    -fx-background-radius: 20;
+    -fx-background-color: -elevatedColor;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 0, 0);
+}
+
+
+.table-view{
+    -fx-table-header-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 0, 0);
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-view .scroll-bar:horizontal .increment-arrow{
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-view .scroll-bar:horizontal .decrement-arrow{
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fontColor;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: -fontColor;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, -bgColor;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, -elevatedColor;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -elevatedColor;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-view .increment-arrow, .table-view .decrement-arrow{
+    -fx-background-color: -fontColor;
+}
+
+.table-view .decrement-button, .table-view .increment-button{
+    -fx-background-color: transparent;
+    -fx-border-color: -bgColor;
+}
+
+.table-view .scroll-bar:vertical{
+    -fx-background-color: -bgColor;
+}
+
+.table-view .thumb{
+    -fx-background-color: -elevatedColor;
+    -fx-background-radius: 5;
+}
+
+.divider{
+    -fx-fill: -bgColor;
+}
+
+.elevatedBoxClickable{
+    -fx-background-radius: 20;
+    -fx-background-color: -elevatedColor;
+}
+
+.elevatedBoxClickable:hover .divider{
+    -fx-fill: -elevatedColor;
+}
+
+.username{
+    -fx-padding: 10;
+    -fx-alignment: baseline-left;
+    -fx-font-weight: bold;
+}
+
+.elevatedBoxClickable:hover{
+    -fx-background-color: -elevatedColor2;
+}
+
+
+.invisSpacer{
+    -fx-fill: transparent;
+}
+
+.header{
+    -fx-font-size: 30;
+    -fx-font-weight: bolder;
+    -fx-alignment: center;
+}
+
+.miniHeader {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.home-button {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-label-padding: 20;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 0, 0);
+}
+
+.yes-button {
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-alignment: center;
+    -fx-padding: 15;
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+    -fx-border-width: 0;
+    -fx-border-style: none;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 0, 0);
+}
+
+.no-button {
+    -fx-background-color: -elevatedColor2;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-alignment: center;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-width: 0;
+    -fx-padding: 15;
+    -fx-border-style: none;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 0, 0);
+}
+.style1piece{
+    -fx-fill: -primary;
+    -fx-stroke-width: 4;
+    -fx-stroke: derive(-primary, -40%);
+    -fx-effect: dropshadow(gaussian, black, 3, 0.1, 0, 0);
+}
+
+.style2piece{
+    -fx-fill: -secondary;
+    -fx-stroke-width: 4;
+    -fx-stroke: derive(-secondary, -40%);
+    -fx-effect: dropshadow(gaussian, black, 3, 0.1, 0, 0);
+}
+
+.boardPiece{
+    -fx-fill: -elevatedColor2;
+    -fx-stroke-width: 4;
+    -fx-stroke: derive(-elevatedColor2, -40%);
+    -fx-effect: dropshadow(gaussian, black, 3, 0.1, 0, 0);
+
+}
+
+.board {
+    -fx-border-radius: 15;
+    -fx-fill: -elevatedColor;
+    -fx-border-color: -elevatedColor2;
+    -fx-border-width: 4;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 0, 0);
+}
+
+.elevatedButton{
+    -fx-background-color: -elevatedColor2;
+}
+
+.elevatedButton:hover{
+    -fx-background-color: -elevatedColor3;
+}
+
+.text-area{
+    -fx-text-box-border: transparent;
+    -fx-focus-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fontColor;
+    -fx-alignment: center-left;
+    -fx-text-alignment: left;
+}
+.text-area .scroll-pane{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.text-area .track{
+    -fx-background-color: -bgColor;
+}
+
+.text-area .thumb{
+    -fx-background-color: -elevatedColor;
+    -fx-background-radius: 5;
+}
+
+.text-area .increment-arrow, .text-area .decrement-arrow{
+    -fx-background-color: -fontColor;
+}
+
+.text-area .decrement-button, .text-area .increment-button{
+    -fx-background-color: transparent;
+    -fx-border-color: -bgColor;
+}
+
+.text-area .scroll-bar:vertical{
+    -fx-background-color: -bgColor;
+}
+
+.scroll-bar > .corner{
+    -fx-background-color: transparent;
+}
+
+.borderpane{
+    -fx-background-color: -bgColor;
+}
+
